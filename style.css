@@ -1,0 +1,33 @@
+body {
+	background-color: black;
+}
+
+h1{
+	text-align: center;
+}
+.foto-site {
+	max-width: 300px;
+}
+
+.conteiner-recursos {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+
+.card{
+	background: blanchedalmond;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	width: 320px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);;
+}
+
+.botao {
+	display: inline-block;
+	text-decoration: none;
+	background-color: #333;
+	color:blanchedalmond;
+	border-radius: 5px;
+}
