@@ -1,33 +1,107 @@
+/* Reset Básico para evitar margens estranhas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-	background-color: black;
+    background-color: #121212; /* Fundo preto moderno */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1{
-	text-align: center;
-}
-.foto-site {
-	max-width: 300px;
+/* Cabeçalho */
+.menu-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1a1a1a;
 }
 
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: blanchedalmond;
+}
+
+.lista-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.lista-menu a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.lista-menu a:hover {
+    color: blanchedalmond;
+}
+
+/* Título */
+.titulo-principal {
+    text-align: center;
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+/* Container de Recursos */
 .conteiner-recursos {
-	display: flex;
-	gap: 20px;
-	justify-content: center;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap; /* Faz os cards pularem de linha no celular */
+    padding: 20px;
 }
 
-.card{
-	background: blanchedalmond;
-	padding: 20px;
-	border-radius: 10px;
-	text-align: center;
-	width: 320px;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.1);;
+/* O Card */
+.card {
+    background: blanchedalmond;
+    color: #333; /* Texto escuro no fundo claro */
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinha o botão sempre no final */
 }
 
+.foto-site {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* O Botão Estilizado */
 .botao {
-	display: inline-block;
-	text-decoration: none;
-	background-color: #333;
-	color:blanchedalmond;
-	border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.botao:hover {
+    background-color: #444;
+    transform: translateY(-3px); /* Efeito de flutuar */
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+    background-color: #1a1a1a;
+    color: #777;
 }
