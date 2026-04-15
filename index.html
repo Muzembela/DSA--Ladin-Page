@@ -3,44 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page DSA</title>
+    <title>Landing Page DSA - mmuzembe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="menu-superior">
+    <header class="header">
         <div class="logo">DSA Guide</div>
         <nav>
-            <ul class="lista-menu">
-                <li><a href="#">Início</a></li>
-                <li><a href="#recursos">Recursos</a></li>
+            <ul>
+                <li><a href="#">Recursos</a></li>
                 <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1 class="titulo-principal">Aprenda Estrutura de Dados e esteja preparado para Entrevistas</h1>
-        
-        <section id="recursos" class="conteiner-recursos">
-            <article class="card">
-                <img class="foto-site" src="download.jpeg" alt="Logo Algomaster">
-                <h2>Algomaster</h2>
-                <p>Domine DSA com explicações textuais e visuais de alta qualidade.</p>
-                <a href="https://algomaster.io/learn/dsa/big-o-introduction" class="botao">Acessar Algomaster</a>
-            </article>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Aprenda Estrutura de Dados e esteja preparado para Entrevistas</h1>
+                <p>Este site contém os melhores recursos para você dominar DSA. Domine a lógica por trás do código e conquiste sua vaga em Big Techs.</p>
+                <button class="btn-primary">Sign up</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://algomaster.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdsa-thumbnail.70784609.jpg&w=1920&q=75&dpl=dpl_84GyYkZm1kkBUnyFQLTQck2vhx53" alt="Ilustração de DSA">
+            </div>
+        </section>
 
-            <article class="card">
-                <img class="foto-site" src="s.png" alt="Logo Structy">
-                <h2>Structy</h2>
-                <p>Pratique DSA com foco total em lógica para entrevistas técnicas.</p>
-                <a href="https://www.structy.net/" class="botao">Acessar Structy</a>
-            </article>
+        <section class="info">
+            <h2>Alguns recursos indispensáveis.</h2>
+            <div class="info-container">
+                
+                <div class="info-item">
+                    <div class="square-blue">
+                        <img src="download.jpeg" alt="Algomaster Logo">
+                    </div>
+                    <p><strong>Algomaster:</strong> Explicações visuais e textuais para dominar algoritmos complexos.</p>
+                </div>
+
+                <div class="info-item">
+                    <div class="square-blue">
+                        <img src="s.png" alt="Structy Logo">
+                    </div>
+                    <p><strong>Structy:</strong> Prática focada em repetição e lógica para entrevistas técnicas.</p>
+                </div>
+
+                <div class="info-item">
+                    <div class="square-blue"></div>
+                    <p>Em breve mais recursos de algoritmos para você.</p>
+                </div>
+
+                <div class="info-item">
+                    <div class="square-blue"></div>
+                    <p>Fique atento às atualizações da nossa lista.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote">
+            <div class="quote-content">
+                <p class="quote-text">"Estruturas de dados e algoritmos não são apenas para passar em entrevistas, são a base para escrever código eficiente e escalável."</p>
+                <p class="quote-author">- mmuzembe, Dev Student</p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-box">
+                <div class="cta-text">
+                    <h3>Call to action! It's time!</h3>
+                    <p>Inscreva-se para receber novidades sobre novos cursos de DSA!</p>
+                </div>
+                <button class="btn-outline">Sign up</button>
+            </div>
         </section>
     </main>
 
-    <footer class="rodape">
-        <p>Desenvolvido com foco em DSA por mmuzembe</p>
+    <footer class="footer">
+        Copyright © The Odin Project / DSA Project 2026
     </footer>
 
 </body>
