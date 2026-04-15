@@ -126,16 +126,23 @@ body {
     overflow: hidden;
 }
 
+/* Essa regra corrige a imagem gigante */
 .square-blue img {
-    width: 100%;
+    /* Limita a largura da imagem ao tamanho do card */
+    max-width: 100%;
+    
+    /* Mantém a proporção (não amassa a imagem) */
     height: auto;
+    
+    /* Opcional: Centraliza se a imagem for menor que o card */
+    display: block;
+    margin: 0 auto;
 }
-
-.info-item p {
-    color: #4b5563;
-    font-size: 14px;
+.info-item {
+    /* Define que cada card tem um tamanho fixo e pequeno */
+    width: 200px;
+    text-align: center;
 }
-
 /* Seção Quote */
 .quote {
     background-color: #e5e7eb;
